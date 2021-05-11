@@ -1,0 +1,19 @@
+name: RegionGuard
+main: com.github.jenya705.RGPlugin
+version: 1.0
+description: Region Guard Plugin for Artale
+author: Jenya705
+depend:
+  - WorldGuard
+  - Vault
+commands:
+  rg:
+    permission: rg.user
+    usage: Syntax Error!
+permissions:
+  rg.*:
+    default: op
+    children:
+      rg.user: true
+  rg.user:
+    default: true
